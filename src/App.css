@@ -17,6 +17,7 @@ body {
   color:white;
   position: absolute;
   align-items: center;
+  border-bottom: rgba(194, 60, 50, 0.26) solid 1px
 }
 .header p{
   max-width: 50vw;
@@ -60,4 +61,7 @@ body {
   justify-content: center;
   font-family: 'Nosifer', cursive;
   color: rgb(54,62,117);
+}
+.foot h1 a{
+  text-decoration: none;
 }

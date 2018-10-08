@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 // import IoIosJournal from 'react-icons/io';
+import './Message.css';
 
 
 export default class Message extends Component {

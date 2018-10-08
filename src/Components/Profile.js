@@ -67,7 +67,7 @@ class Profile extends Component {
         return(
         <div className="randomChar">
         <img src={this.state.postedImg} alt="" width='300'/>
-            <input placeholder="Post New Image URL" 
+            <input placeholder="" 
                  onChange={ this.handleChange }
                  value={ this.state.userInput }
                  onKeyPress={ this.addURL }

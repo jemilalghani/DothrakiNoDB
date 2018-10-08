@@ -60,7 +60,7 @@ class App extends Component {
       </div>
     </div>
       <div className="foot">
-      <h1> Dothraki Starter Pack </h1>
+      <h1> <a href="https://docs.dothraki.org/Dothraki.pdf">Dothraki Starter Pack</a></h1>
       </div>
   </div>
     );
