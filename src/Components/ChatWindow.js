@@ -17,12 +17,10 @@ export default class ChatWindow extends Component {
     }
     componentDidMount() {
         axios.get('/api/translations').then( response => {
-            console.log(response);
           this.setState({ translations: response.data });
         });
       }
-      editComment( id, comments ) {
-        console.log( 'addCommentary:', id, comments ); 
+      editComment( id, comments ) { 
         axios.put( url + `/${id}`, {comments} ).then( response => {
           this.setState({ translations: response.data });
         });
@@ -46,7 +44,8 @@ export default class ChatWindow extends Component {
                     text={ translated.text } 
                     language={translated.language} 
                     comments={translated.comments}
-                    edit={ this.editComment} remove={ this.removeTranslation } />
+                    edit={ this.editComment} 
+                    remove={ this.removeTranslation } />
                   ))
                 }
               </div>

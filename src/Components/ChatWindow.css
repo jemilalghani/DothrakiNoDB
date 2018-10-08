@@ -7,9 +7,9 @@
     overflow-y: auto;
     font-family: 'Finger Paint', cursive;
     font-size: 12px;
-    height: 100vh;
+    height: 99vh;
     width: 300px;
-    background: rgba(252, 122, 0, 0.068);
+    background: rgba(252, 122, 0, 0.199);
     display: flex;
     flex-direction: column;
     
