@@ -1,0 +1,24 @@
+.randomCharButton{
+    display: flex;
+    /* flex-direction: column; */
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+
+.randomCharButton button{
+    background: transparent;
+    background-image:url('../Icons/saddle.svg');
+    width: 35px;
+    border: none;
+    color: transparent;
+    /* padding: 30px 30px; */
+    text-align: center;
+    text-decoration: none;
+    font-size: 42px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import url from '../api';
+import './ChatWindow.css';
 
 import Message from './Message';
 

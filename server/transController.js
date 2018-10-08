@@ -3,7 +3,6 @@ let translations=[
         "id":1,
         "translated": "Hash yeri ray tih erinak’s zhavorsa?",
         "text": "Have you seen my lady’s dragon?",
-        "language": "dothraki",
         "comments":"",
         
       },
@@ -11,42 +10,36 @@ let translations=[
         "id":2,
         "translated": "Shieraki gori ha yeraan!",
         "text":"The stars are charging for you!",
-        "language": "dothraki",
         "comments":""
     },
     {
         "id":3,
         "translated": "Fichas jahakes moon!",
         "text": "Get him! (Take his braid!)",
-        "language": "dothraki",
         "comments":""
     },
     {
         "id":4,
         "translated": "Hash yer asti k’athijilari?",
         "text": "Are you speaking truthfully?",
-        "language": "dothraki",
         "comments":""
     },
     {
         "id":5,
         "translated": "Anha efichisak haz yeroon!",
         "text": "I disagree!",
-        "language": "dothraki",
         "comments":""
     },
     {
         "id":6,
         "translated": "Yer affesi anni",
-        "text": "You make me itch. Used to indicate that you don't like someone or that they make you uncomfortable.",
-        "language": "dothraki",
+        "text": "You make me itch.",
         "comments":""
     },
     {
         "id":7,
         "translated": "Me nem nesa",
         "text": "It is known",
-        "language": "dothraki",
         "comments":""
     }
 ];

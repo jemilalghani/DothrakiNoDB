@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+// import IoIosJournal from 'react-icons/io';
 
 
 export default class Message extends Component {
@@ -41,9 +41,7 @@ export default class Message extends Component {
       <br/>
       {text}
       <br/>
-      {language}
-      <br/>
-      {comments}
+      {language} {comments}
 
         {
           editting
@@ -52,8 +50,12 @@ export default class Message extends Component {
           :
             <span className="Message__text">{comments}</span>
         }
-        <span className="Message__edit" onClick={ () => this.setState({ editting: !this.state.editting,  comments }) }> EDIT </span>
-        <span className="Message__delete" onClick={ () => remove( id ) }> DELETE </span>
+        <span className="Message__edit" onClick={ () => this.setState({ editting: !this.state.editting,  comments }) }>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path d="M408 64H96c-22.002 0-32 17.998-32 40v344l64-64h280c22.002 0 40-17.998 40-40V104c0-22.002-17.998-40-40-40zM198.4 242H160v-40h38.4v40zm76.8 0h-38.4v-40h38.4v40zm76.8 0h-38.4v-40H352v40z"/></svg>
+        </span>
+        <span className="Message__delete" onClick={ () => remove( id ) }> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path d="M433.5 96H167.2c-12.2 0-21.8 6.2-28.2 15.6L43 256l96 144.2c6.4 9.4 16 15.8 28.2 15.8h266.2c19.5 0 35.5-16 35.5-35.6V131.6C469 112 453 96 433.5 96zm-53.3 223.8l-25 25.1-63.7-63.8-63.7 63.8-25-25.1 63.7-63.8-63.7-63.8 25-25.1 63.7 63.8 63.7-63.8 25 25.1-63.7 63.8 63.7 63.8z"/></svg>
+        </span>
       </div>
     )
   }

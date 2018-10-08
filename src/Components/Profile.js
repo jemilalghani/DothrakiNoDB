@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './Profile.css';
 
 let number = 29;
 class Profile extends Component {
@@ -65,13 +66,13 @@ class Profile extends Component {
     render() {
         return(
         <div className="randomChar">
+        <img src={this.state.postedImg}  width='300'/>
             <input placeholder="Enter valid URL here" 
                  onChange={ this.handleChange }
                  value={ this.state.userInput }
                  onKeyPress={ this.addURL }
             />
-          <button onClick={this.randomPicker}>Click Me</button>
-          <img src={this.state.postedImg}  width='300'/>
+          <button onClick={this.randomPicker}></button>
         </div>
       );
     }
