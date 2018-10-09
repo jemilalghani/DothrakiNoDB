@@ -42,6 +42,7 @@ class Profile extends Component {
       this.addURL=this.addURL.bind(this);
       this.handleChange=this.handleChange.bind(this);
       this.randomPicker=this.randomPicker.bind(this);
+      this.clearImg=this.clearImg.bind(this);
     }
     handleChange( event ) {
         this.setState({ userInput: event.target.value });
@@ -57,10 +58,18 @@ class Profile extends Component {
         }
     }
     randomPicker(){
+        if (this.state.postedImg) {
+            return;
+        }
         let help=Math.random()*number;
         let randmIndex=Math.floor(help);
         this.setState({
             postedImg: (this.state.imageURL[randmIndex].url)})
+    }
+    clearImg(){
+        this.setState({
+            postedImg:'',
+        })
     }
     
     render() {
@@ -72,7 +81,7 @@ class Profile extends Component {
                  value={ this.state.userInput }
                  onKeyPress={ this.addURL }
             />
-          <button onClick={this.randomPicker}></button>
+          <button onMouseOver={this.randomPicker} onClick={this.clearImg}></button>
         </div>
       );
     }
